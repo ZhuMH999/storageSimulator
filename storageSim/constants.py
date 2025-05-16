@@ -1,0 +1,28 @@
+import pygame
+pygame.font.init()
+
+GROUND = pygame.transform.scale(pygame.image.load('storageSim/assets/outside_floor.png'), (75, 75))
+BUILDING_FLOOR = pygame.transform.scale(pygame.image.load('storageSim/assets/building_floor.png'), (75, 75))
+GRASS = pygame.transform.scale(pygame.image.load('storageSim/assets/grass.png'), (75, 75))
+CRATE = pygame.transform.scale(pygame.image.load('storageSim/assets/crate.png'), (75, 75))
+TRANSPARENT_CRATE = pygame.transform.scale(pygame.image.load('storageSim/assets/crate.png'), (75, 75))
+UNLOAD_FLOOR = pygame.transform.scale(pygame.image.load('storageSim/assets/unload_floor.png'), (75, 75))
+
+W3H2 = pygame.transform.scale(pygame.image.load('storageSim/assets/3H2.png'), (75, 75))
+W3V2 = pygame.transform.scale(pygame.image.load('storageSim/assets/3V2.png'), (75, 75))
+W3L3 = pygame.transform.scale(pygame.image.load('storageSim/assets/3L3.png'), (75, 75))
+W3R3 = pygame.transform.scale(pygame.image.load('storageSim/assets/3R3.png'), (75, 75))
+W3T3 = pygame.transform.scale(pygame.image.load('storageSim/assets/3T3.png'), (75, 75))
+W3B3 = pygame.transform.scale(pygame.image.load('storageSim/assets/3B3.png'), (75, 75))
+W3TLC = pygame.transform.scale(pygame.image.load('storageSim/assets/3TLC.png'), (75, 75))
+W3TRC = pygame.transform.scale(pygame.image.load('storageSim/assets/3TRC.png'), (75, 75))
+W3BLC = pygame.transform.scale(pygame.image.load('storageSim/assets/3BLC.png'), (75, 75))
+W3BRC = pygame.transform.scale(pygame.image.load('storageSim/assets/3BRC.png'), (75, 75))
+W3LRD = pygame.transform.scale(pygame.image.load('storageSim/assets/3LRD.png'), (75, 75))
+W3LRU = pygame.transform.scale(pygame.image.load('storageSim/assets/3LRU.png'), (75, 75))
+W3LUD = pygame.transform.scale(pygame.image.load('storageSim/assets/3LUD.png'), (75, 75))
+W3RUD = pygame.transform.scale(pygame.image.load('storageSim/assets/3RUD.png'), (75, 75))
+
+FONT = pygame.font.SysFont(pygame.font.get_fonts()[0], 50)
+FONT2 = pygame.font.SysFont(pygame.font.get_fonts()[0], 30)
+FONT3 = pygame.font.SysFont(pygame.font.get_fonts()[0], 20)
