@@ -115,6 +115,12 @@ class View:
 
         pygame.draw.rect(self.window, (255, 0, 0), (362.5+7, 362.5+7, SQUARE_WIDTH-15, SQUARE_WIDTH-15))
 
+        if self.boxes.timer - time.time() < 0:
+            widget = FONT3.render(f'Delivery is incomplete.', True, pygame.Color('white'))
+        else:
+            widget = FONT3.render(f'Next delivery is in: {round(self.boxes.timer - time.time(), 1)} seconds.', True, pygame.Color('white'))
+        self.window.blit(widget, (10, 120))
+
 class Boxes:
     def __init__(self):
         self.box = []
@@ -154,8 +160,6 @@ class Boxes:
                 mode = 'Takeaway'
             elif (len(self.box) / x) * 100 < 30:
                 mode = 'Give'
-
-            print(mode)
 
             if mode == 'Normal':
                 print('ya')
